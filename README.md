@@ -10,7 +10,7 @@ Integrantes:
 ### Introducción
 El Consejo Wesen es una antigua institución que fue creada en la edad media para controlar a los wesen más violentos que atacaban los pueblos de kehrseiter (humanos normales), razón por la cual luego todos los wesen eran perseguidos en venganza por las matanzas. El Consejo tiene entre otras atribuciones: detectar a los wesen peligrosos y "eliminarlos", castigar a los wesen que se muestran públicamente sin razón alguna, y en general hacer cumplir las normas del Consejo, que tienen como intención principal conservar la paz entre wesen y kehrseiter. El Consejo Wesen tiene su sede en La Haya, junto a la Corte Internacional de Justicia.
 
-### Requirimientos
+### Requerimientos
 Pero en el mundo hay millones de wesen y es difícil hacer un seguimiento, con lo que los miembros del consejo han encargado a uno de sus programadores wesen que realice una aplicación en Javascript que pueda accederse desde cualquier equipo informático y que permita realizar las siguientes operaciones:
 - Listado de wesen peligrosos (los datos se almacenan de forma persistente usando LocalStorage).
 - Cada wesen debe contener la siguiente información:
