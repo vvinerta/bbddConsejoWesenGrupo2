@@ -33,3 +33,65 @@ Pero en el mundo hay millones de wesen y es difícil hacer un seguimiento, con l
     - Descripción pormenorizada del crimen.
     
 Se debe emitir un informe con los wesen registrados como criminales, ordenados por fecha de la condena, gravedad de las faltas y número de crímenes por los que se les persigue. Los datos que deben aparecen en el informe son el nombre y los apellidos, nacionalidad, tipo de wesen, fecha de la condena, la gravedad más alta de sus faltas y el número de crímenes cometidos.
+
+### Arquitectura del software
+- Model
+    - Wesen
+    - Crimen
+- View
+    - Formulario de registro de wesen
+    - Formulario de registro de crimen
+    - Listado de wesen
+    - Listado de crimenes
+    - Informe
+    - Header 
+    - Footer
+- Controller
+    - Controller de registro de wesen
+    - Controller de registro de crimen
+    - Controller listado de wesen
+    - Controller listado de crimenes
+    - Controller informe
+- Data
+    - WesenDAO
+    - CrimenDAO
+- Service
+    - FiltrarListaService
+- Styles
+    - styles.css
+    - formulario.css
+    - listado.css
+    - informe.css 
+
+### Reparto de tareas
+**Diego**
+- [ ] Modelo wesen
+- [ ] Modelo crimen
+- [ ] Formulario wesen
+- [ ] Formulario crimen
+- [ ] formulario.css
+---
+**Sergio**
+- [ ] Informe controller
+- [ ] Informe view
+- [ ] Informe.css
+---
+**Raul**
+- [ ] WesenDAO
+- [ ] CrimenDAO
+- [ ] FiltrarListaService
+---
+**Guille**
+- [ ] Lista wesen
+- [ ] Lista crimen
+- [ ] Controller listado wesen
+- [ ] Controller listado crimen
+---
+**Victor**
+- [ ] Header
+- [ ] Footer
+- [ ] styles.css
+- [ ] listado.css
+- [ ] controller de registro wesen
+- [ ] controller de registro crimenes
+- **Lider de equipo ayudara a sus compañeros**
