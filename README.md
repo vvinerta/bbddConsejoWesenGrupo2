@@ -64,30 +64,30 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
     - informe.css 
 
 ### Reparto de tareas
-**Diego**
+**Diego** 🤓
 - [ ] Modelo wesen
 - [ ] Modelo crimen
 - [ ] Formulario wesen
 - [ ] Formulario crimen
 - [ ] formulario.css
 ---
-**Sergio**
+**Sergio** 😐
 - [ ] Informe controller
 - [ ] Informe view
 - [ ] Informe.css
 ---
-**Raul**
+**Raul** 😈
 - [ ] WesenDAO
 - [ ] CrimenDAO
 - [ ] FiltrarListaService
 ---
-**Guille**
+**Guille** 🏳️‍🌈
 - [ ] Lista wesen
 - [ ] Lista crimen
 - [ ] Controller listado wesen
 - [ ] Controller listado crimen
 ---
-**Victor**
+**Victor** 🧓
 - [ ] Header
 - [ ] Footer
 - [ ] styles.css
