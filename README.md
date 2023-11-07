@@ -81,7 +81,7 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
 - [ ] CrimenDAO
 - [ ] FiltrarListaService
 ---
-**Guille** 🏳️‍🌈
+**Guille** 🐧
 - [ ] Lista wesen
 - [ ] Lista crimen
 - [ ] Controller listado wesen
