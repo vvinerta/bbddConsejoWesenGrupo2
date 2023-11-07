@@ -37,16 +37,44 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
 ### Arquitectura del software
 - Model
     - Wesen
+
+      > Clase que representa un objeto wesen
+
     - Crimen
+ 
+      > Clase que representa un objeto crimen
+    
 - View
     - Formulario de registro de wesen
+      
+      > Formulario para crear un nuevo wesen 
+
     - Formulario de registro de crimen
+
+      > Formulario para crear un nuevo wesen 
+  
     - Listado de wesen
+
+      > Lista de todos los wesen
+  
     - Listado de crimenes
+
+      > Lista de todos los crimenes
+  
     - Informe
-    - Header 
+ 
+      > Informe de los wesen peligrosos con posibilidad de ordenar  y filtrar
+
+    - Header
+ 
+      > Barra de navegación para acceder a las diferentes vistas
+      
     - Footer
+
+      > Información de la página y del equipo desarrollador
+      
 - Controller
+  > Funcionalidades para implementar en sus respectivas vistas
     - Controller de registro de wesen
     - Controller de registro de crimen
     - Controller listado de wesen
@@ -54,10 +82,20 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
     - Controller informe
 - Data
     - WesenDAO
+
+      > Funciones para trabajar con los datos en el local storage de wesen
+
     - CrimenDAO
+ 
+      > Funciones para trabajar con los datos en el local storage de crimen
+    
 - Service
     - FiltrarListaService
+ 
+      > Servicio para filtrar y ordenar el listado de wesen criminales para el informe
+    
 - Styles
+  > Estilos para sus respectivas vistas
     - styles.css
     - formulario.css
     - listado.css
