@@ -101,6 +101,12 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
     - listado.css
     - informe.css 
 
+### Paleta de colores para la aplicación
+- Fondos : Azul oscuro #0F2237
+- Botones : Naranja #F58A1B
+- Bordes y sombras : #43485E
+- Otros : #A15D48
+
 ### Reparto de tareas
 **Diego** 🤓
 - [ ] Modelo wesen
