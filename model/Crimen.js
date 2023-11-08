@@ -38,11 +38,5 @@ class Crimen {
     setVictimas(nuevaVictima){
         this.victimas = nuevaVictima;
     }
-    
-    denominacion = "";
-    fechaRealizacion = "";
-    involucradosKehrseiter = "";
-    victimas = 0;
-    descripcion = "";
 }
 

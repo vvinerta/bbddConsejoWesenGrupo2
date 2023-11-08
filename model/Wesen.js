@@ -110,18 +110,6 @@ class Wesen {
         this.fechaCondena = nuevaFechaCondena;
     }
 
-    nombreApellidos = "";
-    direccion = "";
-    nacionalidad = "";
-    tipo = "";
-    crimenes = ["", "", ""];
-    foto = "";
-    apercibido = true; 
-    gravedadFaltas = 5; 
-    wesenComplices = ["", ""];
-    sicario = "";
-    castigo = ["", ""];
-    fechaCondena = "";
 }
 
    
