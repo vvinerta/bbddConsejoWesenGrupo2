@@ -90,7 +90,7 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
       > Funciones para trabajar con los datos en el local storage de crimen
     
 - Service
-    - FiltrarListaService
+    - WesenService
  
       > Servicio para filtrar y ordenar el listado de wesen criminales para el informe
     
@@ -109,10 +109,10 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
 
 ### Reparto de tareas
 **Diego** 🤓
-- [ ] Modelo wesen
-- [ ] Modelo crimen
-- [ ] Formulario wesen
-- [ ] Formulario crimen
+- [x] Modelo wesen
+- [x] Modelo crimen
+- [x] Formulario wesen
+- [x] Formulario crimen
 - [ ] formulario.css
 ---
 **Sergio** 😐
@@ -121,9 +121,9 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
 - [ ] Informe.css
 ---
 **Raul** 😈
-- [ ] WesenDAO
-- [ ] CrimenDAO
-- [ ] FiltrarListaService
+- [x] WesenDAO
+- [x] CrimenDAO
+- [ ] WesenService
 ---
 **Guille** 🐧
 - [ ] Lista wesen
