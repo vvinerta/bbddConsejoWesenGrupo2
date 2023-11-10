@@ -38,5 +38,13 @@ class Crimen {
     setVictimas(nuevaVictima){
         this.victimas = nuevaVictima;
     }
+
+    getDescripcion(){
+        return this.descripcion;
+    }
+
+    setDescripcion(nuevaDescripcion){
+        this.descripcion = nuevaDescripcion;
+    }
 }
 
