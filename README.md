@@ -139,7 +139,6 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
 - [x] Header
 - [x] Footer
 - [ ] styles.css
-
 - [ ] controller de registro wesen
 - [ ] controller de registro crimenes
 - **Lider de equipo ayudara a sus compañeros**

@@ -16,7 +16,7 @@ export class Footer extends HTMLElement {
     }
 
     template() {
-        return fetch('footer.html')
+        return fetch('../components/footer.html')
             .then(response => response.text())
             .then(html => {
                 this.shadowRoot.innerHTML = html;
