@@ -42,6 +42,10 @@
     padding: 0;
 }
 
+.menu li:hover{
+    cursor: pointer;
+}
+
 .menu a {
     display: flex;
     width: 100%;
