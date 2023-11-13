@@ -129,11 +129,11 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
 - [x] WesenService
 ---
 **Guille** 🐧
-- [ ] Lista wesen
-- [ ] Lista crimen
-- [ ] Controller listado wesen
-- [ ] Controller listado crimen
-- [ ] listado.css
+- [x] Lista wesen
+- [x] Lista crimen
+- [x] Controller listado wesen
+- [x] Controller listado crimen
+- [x] listado.css
 ---
 **Victor** 🧓
 - [x] Header
