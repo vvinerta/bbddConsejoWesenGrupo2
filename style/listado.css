@@ -1,6 +1,7 @@
 .horizontal{
     display: flex;
     margin-left: 15px;
+    margin: 15px;
     flex-direction: row;
 }
 ul{
@@ -15,7 +16,6 @@ li{
 h2{
    margin: 0;
    margin-bottom: 0;
-   margin-top: 15px;
 }
 .info{
     margin-right: 30px;
@@ -24,6 +24,22 @@ img{
     margin-top: 15px;
     height: 80px;
 }
-.suelo{
-    margin-bottom: 15px;
+textarea{
+    font-size: 16px;
+    background-color: transparent; 
+    color: white;
+    border: none; 
+    resize: none; 
+    pointer-events: none; 
+    
 }
+
+.horizontal2{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+}
+
