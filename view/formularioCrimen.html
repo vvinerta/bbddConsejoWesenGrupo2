@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/formulario.css">
     <link rel="stylesheet" href="../style/styles.css">
+    <script src="../controller/formularioCrimenController.js" defer></script>
+    <script src="../model/Crimen.js" defer></script>
+    <script src="../data/CrimenDao.js" defer></script>
     <title>FORMULARIO CRIMENES</title>
 </head>
 <body>
     <h1>Formulario Crimen</h1>
-    <form id="crimenForm">
+    <form id="crimenForm" onsubmit="return false">
         <label for="denominacion">Denominación del Crimen:</label>
-        <input type="text" id="denominacion" value=""><br>
+        <input type="text" id="denominacion" value="" required><br>
 
         <label for="fechaRealizacion">Fecha aproximada de Realización:</label>
-        <input type="date" id="fechaRealizacion" value=""><br>
+        <input type="date" id="fechaRealizacion" value="" required><br>
 
         <label for="involucradosKehrseiter">Involucrados Kehrseiter:</label>
-        <input type="text" id="involucradosKehrseiter" value=""><br>
+        <input type="text" id="involucradosKehrseiter" value="" required><br>
 
         <label for="victimas">Número de Víctimas:</label>
-        <input type="number" id="victimas" value="0"><br>
+        <input type="number" id="victimas" value="0" required><br>
 
         <label for="descripcion">Descripción detallada del Crimen:</label>
-        <textarea id="descripcion" rows="4" cols="50"></textarea><br>
+        <textarea id="descripcion" rows="4" cols="50" required></textarea><br>
 
         <button type="submit">Enviar</button>
     </form>
