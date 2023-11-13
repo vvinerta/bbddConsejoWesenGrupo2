@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/formulario.css">
     <link rel="stylesheet" href="../style/styles.css">
+    <script src="../controller/formularioWesenController.js" defer></script>
+    <script src="../model/Wesen.js" defer></script>
+    <script src="../data/WesenDao.js" defer></script>
     <title>FORMULARIO WESEN</title>
 </head>
 <body>
 
     <h1>Formulario Wesen</h1>
-    <form id="wesenForm">
+    <form id="wesenForm" onsubmit="return false" >
         <label for="nombreApellidos">Nombre y Apellidos:</label>
         <input type="text" id="nombreApellidos" value="" required><br>
 
@@ -27,7 +30,7 @@
         <textarea id="crimenes" rows="4" cols="50" required></textarea><br>
 
         <label for="foto">Foto:</label>
-        <input type="file" id="foto" accept="img/*" onchange="previewImage(event)" required><br>
+        <input type="file" id="foto" accept="img/*" onchange="previewImage(this)" required><br>
         <img src="" alt="" id="previewImg">
 
         <label for="apercibido">Apercibido:</label>
@@ -55,7 +58,7 @@
         <label for="fechaCondena">Fecha Condena:</label>
         <input type="date" id="fechaCondena" value="" required><br>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" onclick="guardarWesen()">Enviar</button>
     </form>
 </body>
 </html>
