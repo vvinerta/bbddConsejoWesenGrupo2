@@ -1,3 +1,6 @@
+# **HAY QUE ABRIRLO CON UN SERVIDOR NO FUNCIONA DESDE C:** :exclamation: :exclamation: :exclamation:
+
+
 ## Base de datos Consejo Wesen (Grimm) :joy:
 
 Integrantes:
@@ -113,7 +116,7 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
 - [x] Modelo crimen
 - [x] Formulario wesen
 - [x] Formulario crimen
-- [ ] formulario.css
+- [x] formulario.css
 ---
 **Sergio** 😐
 - [ ] Informe controller
@@ -123,19 +126,20 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
 **Raul** 😈
 - [x] WesenDAO
 - [x] CrimenDAO
-- [ ] WesenService
+- [x] WesenService
 ---
 **Guille** 🐧
 - [ ] Lista wesen
 - [ ] Lista crimen
 - [ ] Controller listado wesen
 - [ ] Controller listado crimen
+- [ ] listado.css
 ---
 **Victor** 🧓
-- [ ] Header
-- [ ] Footer
+- [x] Header
+- [x] Footer
 - [ ] styles.css
-- [ ] listado.css
+
 - [ ] controller de registro wesen
 - [ ] controller de registro crimenes
 - **Lider de equipo ayudara a sus compañeros**
