@@ -32,3 +32,9 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+#previewImg {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 10px;
+}

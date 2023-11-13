@@ -24,16 +24,24 @@
         <input type="text" id="tipo" value=""><br>
 
         <label for="crimenes">Crímenes:</label>
-        <input type="text" id="crimenes" value=""><br>
+        <textarea id="crimenes" rows="4" cols="50"></textarea><br>
 
         <label for="foto">Foto:</label>
-        <input type="text" id="foto" value=""><br>
+        <input type="file" id="foto" accept="img/*" onchange="previewImage(event)"><br>
+        <img src="" alt="" id="previewImg">
 
         <label for="apercibido">Apercibido:</label>
         <input type="checkbox" id="apercibido" checked><br>
 
         <label for="gravedadFaltas">Gravedad Faltas:</label>
-        <input type="number" id="gravedadFaltas" value=""><br>
+        <select name="gravedadFaltas" id="gravedadFaltas">
+            <option value="1" disabled selected>Seleccione la gravedad :</option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+            <option value="4">3</option>
+            <option value="5">4</option>
+            <option value="6">5</option>
+        </select><br><br>
 
         <label for="wesenComplices">Wesen Cómplices:</label>
         <input type="text" id="wesenComplices" value=""><br>
@@ -42,7 +50,7 @@
         <input type="text" id="sicario" value=""><br>
 
         <label for="castigo">Castigo:</label>
-        <input type="text" id="castigo" value=""><br>
+        <textarea id="castigo" rows="4" cols="50"></textarea><br>
 
         <label for="fechaCondena">Fecha Condena:</label>
         <input type="date" id="fechaCondena" value=""><br>
