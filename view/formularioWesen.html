@@ -12,48 +12,48 @@
     <h1>Formulario Wesen</h1>
     <form id="wesenForm">
         <label for="nombreApellidos">Nombre y Apellidos:</label>
-        <input type="text" id="nombreApellidos" value=""><br>
+        <input type="text" id="nombreApellidos" value="" required><br>
 
         <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" value=""><br>
+        <input type="text" id="direccion" value="" required><br>
 
         <label for="nacionalidad">Nacionalidad:</label>
-        <input type="text" id="nacionalidad" value=""><br>
+        <input type="text" id="nacionalidad" value="" required><br>
 
         <label for="tipo">Tipo:</label>
-        <input type="text" id="tipo" value=""><br>
+        <input type="text" id="tipo" value="" required><br>
 
         <label for="crimenes">Crímenes:</label>
-        <textarea id="crimenes" rows="4" cols="50"></textarea><br>
+        <textarea id="crimenes" rows="4" cols="50" required></textarea><br>
 
         <label for="foto">Foto:</label>
-        <input type="file" id="foto" accept="img/*" onchange="previewImage(event)"><br>
+        <input type="file" id="foto" accept="img/*" onchange="previewImage(event)" required><br>
         <img src="" alt="" id="previewImg">
 
         <label for="apercibido">Apercibido:</label>
         <input type="checkbox" id="apercibido" checked><br>
 
         <label for="gravedadFaltas">Gravedad Faltas:</label>
-        <select name="gravedadFaltas" id="gravedadFaltas">
-            <option value="1" disabled selected>Seleccione la gravedad :</option>
-            <option value="2">1</option>
-            <option value="3">2</option>
-            <option value="4">3</option>
-            <option value="5">4</option>
-            <option value="6">5</option>
+        <select name="gravedadFaltas" id="gravedadFaltas" required>
+            <option value="" >Seleccione la gravedad :</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
         </select><br><br>
 
         <label for="wesenComplices">Wesen Cómplices:</label>
-        <input type="text" id="wesenComplices" value=""><br>
+        <input type="text" id="wesenComplices" value="" required><br>
 
         <label for="sicario">Sicario:</label>
-        <input type="text" id="sicario" value=""><br>
+        <input type="text" id="sicario" value="" required><br>
 
         <label for="castigo">Castigo:</label>
-        <textarea id="castigo" rows="4" cols="50"></textarea><br>
+        <textarea id="castigo" rows="4" cols="50" required></textarea><br>
 
         <label for="fechaCondena">Fecha Condena:</label>
-        <input type="date" id="fechaCondena" value=""><br>
+        <input type="date" id="fechaCondena" value="" required><br>
 
         <button type="submit">Enviar</button>
     </form>
