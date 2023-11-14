@@ -8,9 +8,11 @@
     <script src="../controller/formularioCrimenController.js" defer></script>
     <script src="../model/Crimen.js" defer></script>
     <script src="../data/CrimenDao.js" defer></script>
+    <script type="module" src="../components/module.js"></script>
     <title>FORMULARIO CRIMENES</title>
 </head>
 <body>
+    <app-header></app-header>
     <h1>Formulario Crimen</h1>
     <form id="crimenForm" onsubmit="return false">
         <label for="denominacion">Denominación del Crimen:</label>
@@ -30,5 +32,6 @@
 
         <button type="submit">Enviar</button>
     </form>
+    <app-footer></app-footer>
 </body>
 </html>

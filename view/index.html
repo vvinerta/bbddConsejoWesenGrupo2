@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wesen Peligrosos</title>
-    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="../components/module.js"></script>
+    <link rel="stylesheet" href="../style/styles.css"/>
   </head>
   <body>
-    <header>
+    <app-header></app-header>
+    <section>
       <h1>Descubre el Mundo de los Wesen</h1>
       <p>
         Bienvenido a nuestro sitio sobre los Wesen más peligrosos. Explora el
         oscuro y misterioso mundo de estas criaturas.
       </p>
       <a href="#wesen-list" class="cta-button">Explora los Wesen</a>
-    </header>
+    </section>
 
     <section id="about">
       <h2>Que Investigamos</h2>
@@ -43,8 +45,6 @@
       <img src="../img/mesaredonda.png" alt="Imagen CazaWesens Mesa Redonda">
     </section>
 
-    <footer>
-      <p>&copy; 2023 Wesen Peligrosos</p>
-    </footer>
+    <app-footer></app-footer>
   </body>
 </html>
