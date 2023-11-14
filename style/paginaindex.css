@@ -1,0 +1,50 @@
+@import "colors.css";
+html, body{
+    margin: 0;
+    padding:0;
+    background-color: var(--color-primary);
+    font-family: Arial, sans-serif;
+}
+section{
+    margin: 20px; /* Ajusta este valor según tus preferencias para el espacio alrededor del contenido de la sección */
+    padding: 20px; /* Añade un relleno interno para separar el contenido del borde de la sección */
+    border: 1px solid #ccc; /* Añade un borde opcional para resaltar la sección */
+    background-color: var(--color-primary);
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    color: white;
+}
+
+h1, h2, p {
+    margin-bottom: 10px; 
+}
+  
+img {
+    max-width: 100%; /* Asegúrate de que las imágenes no sobrepasen el ancho de la sección */
+    height: auto; /* Evita que las imágenes se deformen */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+}
+
+/* Nueva regla para centrar verticalmente las imágenes */
+section img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+button{
+    height: 50px;
+    width: 100px;
+    background-color: var(--color-secondary);
+    border-radius: 15px;
+    border: 3px solid var(--color-terciary);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  	font-family: Arial, sans-serif;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--color-secondary-accent);
+}
