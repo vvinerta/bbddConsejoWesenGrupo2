@@ -25,7 +25,7 @@ function guardarWesen(){
     let tipo = txtTipo.value;
     let crimenes = txtCrimenes.value;
     let foto = txtFoto.value;
-    let apercibido = txtApercibido.value;
+    let apercibido = txtApercibido.checked;
     let gravedadFaltas = comboGravedadFaltas.value;
     let wesenComplices = comboGravedadFaltas.value;
     let sicario = txtSicario.value;
@@ -47,7 +47,7 @@ function guardarWesen(){
 }
 
 function previewImage(input) {
-    
+
     const previewImg = document.getElementById('previewImg');
 
     const file = input.files[0];
