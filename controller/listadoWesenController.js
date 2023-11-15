@@ -1,19 +1,13 @@
-
 var lista =document.getElementById("listaW");  
-// let wesen1 = new Wesen("Anyah Lebroska", "C/ Verguno Tercero", "Rusa", "Perro", ["Trafico de Organos"], "https://img.freepik.com/foto-gratis/vista-frontal-retrato-belleza-joven-hembra-rostro_186202-460.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699833600&semt=sph", true, 4, ["Antonio Vargas Heredia", "Francisco Alegre"], "Don Manuel", "Empalacion", "12-12-2010");
-// let wesen2 = new Wesen("Anyah Lebroska", "C/ Verguno Tercero", "Rusa", "Perro", ["Trafico de Organos"], "https://img.freepik.com/foto-gratis/vista-frontal-retrato-belleza-joven-hembra-rostro_186202-460.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699833600&semt=sph", true, 4, ["Antonio Vargas Heredia", "Francisco Alegre"], "Don Manuel", "Empalacion", "12-12-2010");
 
 let wesendao=new WesenDao(); 
 let arraywesens=[];
- arraywesens=wesendao.getAllWesens();
-
-// arraywesens=[wesen1,wesen2];
+arraywesens=wesendao.getAllWesens();
 
 arraywesens.forEach(element => {
 
     formateardatos(element);
-    let complices=listararrays(element.getWesenComplices())
-
+    let complices=listararrays(element.getWesenComplices());
 
 var li=document.createElement("li");
 li.innerHTML=
@@ -49,9 +43,10 @@ if(objeto.getApercibido()){
 
 }
 function listararrays(array){
-    let involucrados="";
-    array.forEach(invo => {
-        involucrados = involucrados.concat(invo, "<br>");
+    let complices="";
+
+    array.forEach(comp => {
+        complices = complices.concat(comp, "<br>");
     });
-return involucrados;
+return complices;
 }
