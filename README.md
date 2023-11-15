@@ -119,9 +119,9 @@ Se debe emitir un informe con los wesen registrados como criminales, ordenados p
 - [x] formulario.css
 ---
 **Sergio** 😐
-- [ ] Informe controller
-- [ ] Informe view
-- [ ] Informe.css
+- [x] Informe controller
+- [x] Informe view
+- [x] Informe.css
 ---
 **Raul** 😈
 - [x] WesenDAO
