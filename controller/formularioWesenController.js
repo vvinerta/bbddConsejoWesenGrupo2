@@ -46,8 +46,8 @@ function guardarWesen(){
     
 }
 
-function previewImage(event) {
-    const input = event.target;
+function previewImage(input) {
+    
     const previewImg = document.getElementById('previewImg');
 
     const file = input.files[0];
