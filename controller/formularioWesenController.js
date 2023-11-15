@@ -26,11 +26,11 @@ function guardarWesen(){
     let foto = txtFoto.value;
     let apercibido = txtApercibido.checked;
     let gravedadFaltas = comboGravedadFaltas.value;
-    let wesenComplices = txtWesenComplices.value;
     let sicario = txtSicario.value;
     let castigo = txtCastigo.value;
     let fechaCondena = selFechaCondena.value;
     let crimenes = [];
+    let wesenComplices = [];
 
     var selectObject =document.getElementById("crimenes");
     for (var i = 0; i < selectObject.options.length; i++) {
@@ -39,7 +39,13 @@ function guardarWesen(){
           }
       }
 
-      console.log(crimenes);
+      var selectObject =document.getElementById("wesenComplices");
+      for (var i = 0; i < selectObject.options.length; i++) {
+          if(selectObject.options[i].selected ==true){              
+                wesenComplices.push(selectObject.options[i].value);
+            }
+        }
+
 
     
     let miWesen = new Wesen(nombre, direccion, nacionalidad, tipo, crimenes, foto, 
@@ -76,7 +82,7 @@ function previewImage(input) {
     }
 }
 
-function addOptions() {
+function addOptionsCrimen() {
 
     let crimenDao = new CrimenDao();
 
@@ -94,4 +100,24 @@ function addOptions() {
     })
    }
 
-addOptions();
+   function addOptionsComplice() {
+
+    let wesenDao = new WesenDao();
+
+    let listaComplices = wesenDao.getNombreWesens();
+
+    console.log(listaComplices);
+
+    var select = document.getElementById("wesenComplices");
+   
+    listaComplices.forEach(function(elm){
+     var option = document.createElement("option");
+     option.text = elm;
+     option.value= elm;
+     select.appendChild(option);
+    })
+   }
+
+addOptionsComplice();
+
+addOptionsCrimen();
