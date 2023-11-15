@@ -27,6 +27,6 @@ class WesenDao {
     addWesen(wesen) {
         const wesens = this.getAllWesens();
         wesens.push(wesen);
-        localStorage.setItem("wesen", JSON.stringify(wesen));
+        localStorage.setItem("wesen", JSON.stringify(wesens));
     }
 }
