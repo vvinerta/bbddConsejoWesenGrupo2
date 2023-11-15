@@ -42,3 +42,30 @@ textarea {
 button{
     margin-left: 40%;
 }
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff; 
+    color: #333; 
+}
+
+
+select option {
+    background-color: #fff; 
+    color: #333; 
+}
+
+select option:checked {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+select:focus {
+    border-color: #007BFF; 
+    box-shadow: 0 0 5px 0 #007BFF; 
+}
+
