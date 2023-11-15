@@ -11,7 +11,7 @@ class WesenDao {
      */
     getAllWesens() {
         const json = localStorage.getItem("wesen");
-        const wesens = JSON.parse(json) || [];
+        let wesens = JSON.parse(json) || [];
         if (!Array.isArray(wesens)) {
             wesens = [wesens];
         }

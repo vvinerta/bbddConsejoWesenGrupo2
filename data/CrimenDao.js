@@ -11,7 +11,7 @@ class CrimenDao {
      */
     getAllCrimenes() {
         const json = localStorage.getItem("crimen");
-        const crimenes = JSON.parse(json) || [];
+        let crimenes = JSON.parse(json) || [];
 
         if (!Array.isArray(crimenes)) {
             crimenes = [crimenes];
