@@ -25,5 +25,7 @@ function guardarCrimen(){
 
     alert("Crimen añadido correctamente a la base de datos");
 
+    document.getElementById("crimenForm").reset();
+
 
 }

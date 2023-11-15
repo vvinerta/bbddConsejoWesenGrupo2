@@ -8,6 +8,7 @@
     <script src="../controller/formularioWesenController.js" defer></script>
     <script src="../model/Wesen.js" defer></script>
     <script src="../data/WesenDao.js" defer></script>
+    <script src="../data/CrimenDao.js"></script>
     <script type="module" src="../components/module.js"></script>
     <title>FORMULARIO WESEN</title>
 </head>
@@ -15,7 +16,7 @@
 
     <app-header></app-header>
     <h1>Formulario Wesen</h1>
-    <form id="wesenForm" onsubmit="return false" >
+    <form id="wesenForm" onsubmit="return false"  >
         <label for="nombreApellidos">Nombre y Apellidos:</label>
         <input type="text" id="nombreApellidos" value="" required><br>
 
@@ -29,7 +30,9 @@
         <input type="text" id="tipo" value="" required><br>
 
         <label for="crimenes">Crímenes:</label>
-        <textarea id="crimenes" rows="4" cols="50" required></textarea><br>
+        <select id="crimenes" rows="4" cols="50" required multiple>
+        <option value="" disabled>Seleccione un crimen</option>
+        </select><br>
 
         <label for="foto">Foto:</label>
         <input type="file" id="foto" accept="image/*" onchange="previewImage(this)" required><br>
@@ -40,7 +43,7 @@
 
         <label for="gravedadFaltas">Gravedad Faltas:</label>
         <select name="gravedadFaltas" id="gravedadFaltas" required>
-            <option value="" >Seleccione la gravedad :</option>
+            <option value="" disabled >Seleccione la gravedad :</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
