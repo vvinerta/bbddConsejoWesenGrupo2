@@ -17,7 +17,13 @@ class CrimenDao {
             crimenes = [crimenes];
         }
 
-        console.log(crimenes);
+        crimenes = crimenes.map(crimen => new Crimen(
+            crimen.denominacion,
+            crimen.fechaRealizacion,
+            crimen.involucradosKehrseiter,
+            crimen.victimas,
+            crimen.descripcion,
+        ));
         return crimenes;
     }
 

@@ -7,7 +7,7 @@ class WesenDao {
      * Devuelve todos los wesens que se encuentran en local storage
      * si no hay ninguno devuelve un array vacio
      * 
-     * @returns wesens Array[Wesen]
+     * @returns {Array<Wesen>} wesens 
      */
     getAllWesens() {
         const json = localStorage.getItem("wesen");
@@ -15,7 +15,20 @@ class WesenDao {
         if (!Array.isArray(wesens)) {
             wesens = [wesens];
         }
-        console.log(wesens);
+        wesens = wesens.map(wesen => new Wesen(
+            wesen.nombreApellidos,
+            wesen.direccion,
+            wesen.nacionalidad,
+            wesen.tipo,
+            wesen.crimenes,
+            wesen.foto,
+            wesen.apercibido,
+            wesen.gravedadFaltas,
+            wesen.wesenComplices,
+            wesen.sicario,
+            wesen.castigo,
+            wesen.fechaCondena,
+        ));
         return wesens;
     }
 
