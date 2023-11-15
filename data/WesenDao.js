@@ -33,6 +33,22 @@ class WesenDao {
     }
 
     /**
+     * Devuelve todos los nombres de los wesens que se encuentran en local storage
+     * si no hay ninguno devuelve un array vacio
+     * 
+     * @returns {Array<String>} wesens 
+     */
+    getNombreWesens() {
+        const json = localStorage.getItem("wesen");
+        let wesens = JSON.parse(json) || [];
+        if (!Array.isArray(wesens)) {
+            wesens = [wesens];
+        }
+        wesens = wesens.map(wesen => wesen.nombreApellidos);
+        return wesens;
+    }
+
+    /**
      * Añade un nuevo wesen al local storage
      * 
      * @param {Wesen} wesen 
