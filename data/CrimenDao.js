@@ -53,6 +53,6 @@ class CrimenDao {
     addCrimen(crimen) {
         const crimenes = this.getAllCrimenes();
         crimenes.push(crimen);
-        localStorage.setItem("crimen", JSON.stringify(crimen));
+        localStorage.setItem("crimen", JSON.stringify(crimenes));
     }
 }
