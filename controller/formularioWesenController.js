@@ -13,17 +13,18 @@ let txtSicario = document.getElementById("sicario");
 let txtCastigo = document.getElementById("castigo");
 let selFechaCondena = document.getElementById("fechaCondena");
 
+
 function guardarWesen(){
 
     if(!document.getElementById("wesenForm").checkValidity()){
         return;
     }
-
+    let img = document.getElementById('previewImg');
     let nombre = txtNombreApellidos.value;
     let direccion = txtDireccion.value;
     let nacionalidad = txtNacionalidad.value;
     let tipo = txtTipo.value;
-    let foto = txtFoto.value;
+    let foto = img.src;
     let apercibido = txtApercibido.checked;
     let gravedadFaltas = comboGravedadFaltas.value;
     let sicario = txtSicario.value;
@@ -60,7 +61,7 @@ function guardarWesen(){
     alert("Criminal añadido a la base de datos");
 
     document.getElementById("wesenForm").reset();
-    
+    img.src = "";
 }
 
 function previewImage(input) {
