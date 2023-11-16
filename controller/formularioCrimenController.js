@@ -5,6 +5,10 @@ let txtInvolucradosKehrseiter = document.getElementById("involucradosKehrseiter"
 let txtVictimas = document.getElementById("victimas");
 let txtDescripcion = document.getElementById("descripcion");
 
+/**
+ * Metodo que una vez validado el formulario nos regista un objeto de Crimen en localStorage
+ * @returns 
+ */
 function guardarCrimen(){
 
     if(!document.getElementById("crimenForm").checkValidity()){

@@ -13,7 +13,10 @@ let txtSicario = document.getElementById("sicario");
 let txtCastigo = document.getElementById("castigo");
 let selFechaCondena = document.getElementById("fechaCondena");
 
-
+/**
+ * Metodo para validar un objeto de tipo Wesen y registralo en localStorage.
+ * @returns 
+ */
 function guardarWesen(){
 
     if(!document.getElementById("wesenForm").checkValidity()){
@@ -63,6 +66,10 @@ function guardarWesen(){
     document.getElementById("wesenForm").reset();
     img.src = "";
 }
+/**
+ * Metodo para mostrar una vista previa de una imagen cargada mediante el explorador de archivos.
+ * @param {elemnto html} input 
+ */
 
 function previewImage(input) {
 
@@ -83,6 +90,10 @@ function previewImage(input) {
     }
 }
 
+/**
+ * Metodo que utilizando un metodo que carga los crimenes almacenados en localStorage y
+ * lo inserta en unas etiquetas option asociadas a la etiqueta <select> crimenes
+ */
 function addOptionsCrimen() {
 
     let crimenDao = new CrimenDao();
@@ -100,7 +111,10 @@ function addOptionsCrimen() {
      select.appendChild(option);
     })
    }
-
+/**
+ * Metodo que utilizando un metodo que carga los wesen criminales almacenados en localStorage y
+ * lo inserta en unas etiquetas option asociadas a la etiqueta <select> wesenComplices
+ */
    function addOptionsComplice() {
 
     let wesenDao = new WesenDao();

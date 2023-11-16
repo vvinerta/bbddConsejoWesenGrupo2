@@ -8,7 +8,7 @@ export class Header extends HTMLElement {
     connectedCallback() {
         this.render();
     }
-
+    
     render() {
         this.shadowDOM.innerHTML = `
             ${this.template()}`

@@ -8,6 +8,10 @@
     color: white;
 }
 
+svg:hover{
+    cursor: pointer;
+}
+
 .usuario {
     text-align: right;
 }
