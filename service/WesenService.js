@@ -24,12 +24,17 @@ class WesenService {
 
     getWesensByType(type) {
         const wesens = this.#dao.getAllWesens();
-        return wesens.filter(wesen => wesen.tipo == type);
+        return wesens.filter(wesen => wesen.tipo.startsWith(type));
     }
 
     getWesensByCrimen(crimen) {
         const wesens = this.#dao.getAllWesens();
         return wesens.filter(wesen => wesen.crimenes.includes(crimen));
+    }
+
+    getWesensByGravedad(gravedad) {
+        const wesens = this.#dao.getAllWesens();
+        return wesens.filter(wesen => wesen.gravedadFaltas == gravedad);
     }
 
     getWesensByGravedadMayorA(gravedad) {
