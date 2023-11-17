@@ -19,43 +19,36 @@ function mostrarAlerta() {
     var resultado = window.confirm("¿Quieres que haya datos por defecto?");
 
     if (resultado) {
-      var wesen1 = {
-        apercibido: true,
-        castigo: "Encierro en el LaberintoExilio a la Dimensión Onírica",
-        crimenes:["Ejecución Espectral"],
-        direccion:"Av. de concha Espina",
-        fechaCondena:"2023-11-16",
-        foto: "https://static.wikia.nocookie.net/grimm/images/f/fd/305-El_Cucuy.png",
-        gravedadFaltas: "5",
-        nacionalidad: "España",
-        nombreApellidos: "Cucuy Geier",
-        sicario: "Ziegevolk",
-        tipo: "Monstruo",
-        wesenComplices: [""]
-      }
 
-      var wesen2 = {
-        apercibido: true,
-        castigo: "Encierro en el Laberinto",
-        crimenes:["Ejecución Espectral", "Desvanecimiento Onírico"],
-        direccion:"Fischerstadt",
-        fechaCondena:"2023-11-17",
-        foto: "https://static.wikia.nocookie.net/grimm/images/5/58/511-Lucien_woged.jpeg",
-        gravedadFaltas: "3",
-        nacionalidad: "Alemania",
-        nombreApellidos: "Schakal",
-        sicario: "Musai",
-        tipo: "Chacal",
-        wesenComplices: ["Cucuy Geier"]
-      }
+      var wesen1 = new Wesen("Cucuy Geier",
+        "Av. de concha Espina",
+        "España",
+        "Monstruo",
+        ["Ejecución Espectral"],
+        "https://static.wikia.nocookie.net/grimm/images/f/fd/305-El_Cucuy.png",
+        true,
+        "5",
+        [""],
+        "Ziegevolk",
+        "Exilio a la Dimensión Onírica",
+        "2023-11-16");
+
+      var wesen2 = new Wesen("Schakal",
+        "Fischerstadt",
+        "Alemania",
+        "Chacal",
+        ["Ejecución Espectral", "Desvanecimiento Onírico"],
+        "https://static.wikia.nocookie.net/grimm/images/5/58/511-Lucien_woged.jpeg",
+        true,
+        "3",
+        ["Cucuy Geier"],
+        "Musai",
+        "Encierro en el Laberinto",
+        "2023-11-17");
 
       let wesenDao = new WesenDao();
       wesenDao.addWesen(wesen1);
       wesenDao.addWesen(wesen2);
-
-      var crimen1 = {
-
-      }
 
       var crimen1 = {
         denominacion: "Desvanecimiento Onírico",
