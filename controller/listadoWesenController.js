@@ -14,6 +14,7 @@ arraywesens.forEach(element => {
 
     
 var li=document.createElement("li");
+li.id = element.getID();
 li.innerHTML="<div class='horizontal'>"+"<div name='datos'>"+
 "<div name='datospersonales' class='horizontal'>"+
 "<div name='datosinfo' class='info'>"+
@@ -42,7 +43,7 @@ lista.appendChild(li);
 function quitarwesen(id){
     if(confirm("¿Desea borrar este Wesen?")){
 wesendao.deleteWesen(id);
-window.location.href="../view/listadoWesen.html";
+ document.getElementById(id).remove();
     }
 }
 
