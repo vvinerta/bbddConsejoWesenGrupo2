@@ -15,20 +15,24 @@ class WesenDao {
         if (!Array.isArray(wesens)) {
             wesens = [wesens];
         }
-        wesens = wesens.map(wesen => new Wesen(
-            wesen.nombreApellidos,
-            wesen.direccion,
-            wesen.nacionalidad,
-            wesen.tipo,
-            wesen.crimenes,
-            wesen.foto,
-            wesen.apercibido,
-            wesen.gravedadFaltas,
-            wesen.wesenComplices,
-            wesen.sicario,
-            wesen.castigo,
-            wesen.fechaCondena,
-        ));
+        wesens = wesens.map(wesen => {
+            let wes = new Wesen(
+                wesen.nombreApellidos,
+                wesen.direccion,
+                wesen.nacionalidad,
+                wesen.tipo,
+                wesen.crimenes,
+                wesen.foto,
+                wesen.apercibido,
+                wesen.gravedadFaltas,
+                wesen.wesenComplices,
+                wesen.sicario,
+                wesen.castigo,
+                wesen.fechaCondena,
+            );
+            wes.setID(wesen.id);
+            return wes;
+        });
         return wesens;
     }
 
@@ -45,6 +49,7 @@ class WesenDao {
             wesens = [wesens];
         }
         wesens = wesens.map(wesen => wesen.nombreApellidos);
+        console.log(wesens);
         return wesens;
     }
 
@@ -66,7 +71,9 @@ class WesenDao {
      */
     deleteWesen(wesenId) {
         const wesens = this.getAllWesens();
-        newWesens = wesens.filter(wesen => wesen.getID() !== wesenId);
+        console.log(wesens);
+        console.log(wesenId);
+        const newWesens = wesens.filter(wesen => wesen.getID() !== wesenId);
         localStorage.setItem("wesen", JSON.stringify(newWesens));
     }
 }
