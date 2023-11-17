@@ -58,4 +58,15 @@ class WesenDao {
         wesens.push(wesen);
         localStorage.setItem("wesen", JSON.stringify(wesens));
     }
+
+    /**
+     * Borra un wesen del local storage
+     * 
+     * @param {Wesen} wesen 
+     */
+    deleteWesen(wesen) {
+        const wesens = this.getAllWesens();
+        newWesens = wesens.filter(wes => wes !== wesen);
+        localStorage.setItem("wesen", JSON.stringify(newWesens));
+    }
 }
