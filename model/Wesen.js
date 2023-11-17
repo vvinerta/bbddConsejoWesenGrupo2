@@ -1,6 +1,7 @@
 class Wesen {  
     constructor(nombreApellidos, direccion, nacionalidad, tipo, crimenes, foto, 
         apercibido, gravedadFaltas, wesenComplices, sicario, castigo, fechaCondena) {
+        this.id = crypto.randomUUID();
         this.nombreApellidos = nombreApellidos;
         this.direccion = direccion;
         this.nacionalidad = nacionalidad;
@@ -13,6 +14,13 @@ class Wesen {
         this.sicario = sicario;
         this.castigo = castigo;
         this.fechaCondena = fechaCondena;
+    }
+    getID(){
+        return this.id;
+    }
+
+    setID(nuevoID) {
+        this.id = nuevoID;
     }
 
     getNombre() {
