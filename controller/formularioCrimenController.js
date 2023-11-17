@@ -33,3 +33,13 @@ function guardarCrimen(){
 
 
 }
+
+/**
+ * Metodo para fijar la fecha maxima de seleccion del <input> de tipo date fechaRealizacion al dia actual.
+ */
+function fechaMaximaHoy(){
+    var today = new Date().toISOString().split('T')[0];
+
+    document.getElementById('fechaRealizacion').setAttribute('max', today);
+}
+fechaMaximaHoy();

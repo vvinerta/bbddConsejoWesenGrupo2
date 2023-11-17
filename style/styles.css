@@ -22,3 +22,7 @@ button:hover{
     cursor: pointer;
     background-color: var(--color-secondary-accent);
 }
+
+textarea{
+    resize: none;
+}
