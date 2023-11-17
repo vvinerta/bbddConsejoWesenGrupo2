@@ -64,9 +64,9 @@ class WesenDao {
      * 
      * @param {Wesen} wesen 
      */
-    deleteWesen(wesen) {
+    deleteWesen(wesenId) {
         const wesens = this.getAllWesens();
-        newWesens = wesens.filter(wes => wes !== wesen);
+        newWesens = wesens.filter(wesen => wesen.getID() !== wesenId);
         localStorage.setItem("wesen", JSON.stringify(newWesens));
     }
 }
