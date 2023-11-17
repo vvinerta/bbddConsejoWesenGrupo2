@@ -3,6 +3,7 @@ var lista =document.getElementById("listaC");
 let wesendao=new CrimenDao(); 
 
 let arraycrimen=[];
+//En esta linea se recoje el array de todos los Wesen
 arraycrimen=wesendao.getAllCrimenes();
 
 arraycrimen.forEach(element => {

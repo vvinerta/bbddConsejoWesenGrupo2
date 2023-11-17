@@ -2,13 +2,17 @@ var lista =document.getElementById("listaW");
 
 let wesendao=new WesenDao(); 
 let arraywesens=[];
+
+//En esta linea se recoje el array de todos los Wesen
 arraywesens=wesendao.getAllWesens();
 
 arraywesens.forEach(element => {
 
+    //Estas dos lineas formatean los datos para mostrarlos
     formateardatos(element);
     let complices=listararrays(element.getWesenComplices());
 
+    
 var li=document.createElement("li");
 li.innerHTML="<div class='horizontal'>"+"<div name='datos'>"+
 "<div name='datospersonales' class='horizontal'>"+
@@ -34,6 +38,7 @@ li.innerHTML="<div class='horizontal'>"+"<div name='datos'>"+
 lista.appendChild(li);
 });
 
+//Este metodo sirve para cambiar true y false por Si y no para mostrarlo
 function formateardatos(objeto){
 
 if(objeto.getApercibido()){
@@ -43,6 +48,8 @@ if(objeto.getApercibido()){
 }
 
 }
+
+//Este metodo saca los complices en una cadena para mostrarlo
 function listararrays(array){
     let complices="";
 
